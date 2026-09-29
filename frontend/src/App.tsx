@@ -224,7 +224,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
     setCollectionsError("")
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/collections/", {
+      const response = await fetch("https://researchlens-api.vercel.app/collections/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -261,7 +261,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/collections/${collectionId}`,
+        `https://researchlens-api.vercel.app/collections/${collectionId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -309,7 +309,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
     setCollectionsError("")
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/collections/", {
+      const response = await fetch("https://researchlens-api.vercel.app/collections/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -353,7 +353,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/collections/${selectedCollection.id}/documents/${documentId}`,
+        `https://researchlens-api.vercel.app/collections/${selectedCollection.id}/documents/${documentId}`,
         {
           method: "POST",
           headers: {
@@ -395,7 +395,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/collections/${selectedCollection.id}/documents/${documentId}`,
+        `https://researchlens-api.vercel.app/collections/${selectedCollection.id}/documents/${documentId}`,
         {
           method: "DELETE",
           headers: {
@@ -443,7 +443,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/collections/${selectedCollection.id}/ask`,
+        `https://researchlens-api.vercel.app/collections/${selectedCollection.id}/ask`,
         {
           method: "POST",
           headers: {
@@ -492,7 +492,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/documents/${documentId}`,
+        `https://researchlens-api.vercel.app/documents/${documentId}`,
         {
           method: "PATCH",
           headers: {
@@ -549,7 +549,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/documents/${documentId}`,
+        `https://researchlens-api.vercel.app/documents/${documentId}`,
         {
           method: "DELETE",
           headers: {
@@ -643,7 +643,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/documents/${selectedDocument.id}/related`,
+        `https://researchlens-api.vercel.app/documents/${selectedDocument.id}/related`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -691,7 +691,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/documents/${selectedDocument.id}/summary`,
+        `https://researchlens-api.vercel.app/documents/${selectedDocument.id}/summary`,
         {
           method: "POST",
           headers: {
@@ -735,7 +735,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/documents/${selectedDocument.id}/key-points`,
+        `https://researchlens-api.vercel.app/documents/${selectedDocument.id}/key-points`,
         {
           method: "POST",
           headers: {
@@ -778,7 +778,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/documents/${selectedDocument.id}/research-insights`,
+        `https://researchlens-api.vercel.app/documents/${selectedDocument.id}/research-insights`,
         {
           method: "POST",
           headers: {
@@ -823,7 +823,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/documents/${selectedDocument.id}/limitations-future-work`,
+        `https://researchlens-api.vercel.app/documents/${selectedDocument.id}/limitations-future-work`,
         {
           method: "POST",
           headers: {
@@ -883,7 +883,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/documents/compare",
+        "https://researchlens-api.vercel.app/documents/compare",
         {
           method: "POST",
           headers: {
@@ -952,7 +952,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/documents/search",
+        "https://researchlens-api.vercel.app/documents/search",
         {
           method: "POST",
           headers: {
