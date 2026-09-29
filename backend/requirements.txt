@@ -57,9 +57,7 @@ starlette==1.7.0
 sympy==1.14.0
 threadpoolctl==3.7.0
 tokenizers==0.23.2
---index-strategy unsafe-best-match
---extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.14.0+cpu
+torch @ https://download.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl
 tqdm==4.70.1
 transformers==5.17.0
 typer==0.27.2
