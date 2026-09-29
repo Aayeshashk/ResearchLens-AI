@@ -12,23 +12,28 @@ from app.api.routes.insights import router as insights_router
 from app.api.routes.summary import router as summary_router
 from app.api.routes.users import router as users_router
 
+
 app = FastAPI(
     title="ResearchLens AI",
     description="AI-powered research and document intelligence platform",
     version="0.1.0",
 )
 
+
+# CORS configuration
 app.add_middleware(
     CORSMiddleware,
-   allow_origins=[
-    "http://localhost:5173",
-    "https://research-lens-ai-taupe.vercel.app",
-],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://research-lens-ai-taupe.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+
+# API routes
 app.include_router(health_router)
 app.include_router(auth_router)
 app.include_router(users_router)
