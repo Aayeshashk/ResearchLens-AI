@@ -21,3 +21,14 @@ if not JWT_SECRET_KEY:
 JWT_ALGORITHM = "HS256"
 
 JWT_ACCESS_TOKEN_EXPIRE_MINUTES = 60
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+if not SUPABASE_URL:
+    raise ValueError("SUPABASE_URL is not set")
+
+SUPABASE_SERVICE_ROLE_KEY = os.getenv(
+    "SUPABASE_SERVICE_ROLE_KEY"
+)
+if not SUPABASE_SERVICE_ROLE_KEY:
+    raise ValueError(
+        "SUPABASE_SERVICE_ROLE_KEY is not set"
+    )

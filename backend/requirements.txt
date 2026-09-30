@@ -66,3 +66,4 @@ typing_extensions==4.16.0
 tzdata==2026.4
 uvicorn==0.54.0
 google-genai==2.25.0
+supabase==2.31.0
