@@ -139,6 +139,12 @@ The system retrieves relevant document content before sending context to the lan
         ▼
  Documents / Chunks /
  Chats / Collections
+## 📸 Product Screenshots
+
+### Research Workspace
+
+![ResearchLens AI Dashboard](docs/screenshots/dashboard.png)
+
 🛠️ Tech Stack
 Frontend
 React
